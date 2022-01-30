@@ -14,10 +14,17 @@
 }
 
 .div_fond_h1{
-    margin-top: 110px;
+    margin-top: 75px;
     margin-bottom: 25px;
 }
 
-#mascotas input{
+.dq{
+    margin-bottom: 45px;
+    color: rgb(7, 123, 201);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 40px;
     text-align: center;
+    font-weight: bold;
 }
+
+/**/

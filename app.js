@@ -44,10 +44,10 @@ addItemInput.addEventListener('keypress',(e)=>{
 hide.addEventListener('click', () => {
   if (listDiv.style.display == 'none') {
     listDiv.style.display = 'block';
-    hide.textContent = 'Hide';
+    hide.textContent = 'Ocultar';
    } else {
     listDiv.style.display = 'none';
-    hide.textContent = 'Show';
+    hide.textContent = 'Mostrar';
    }
 });
 
