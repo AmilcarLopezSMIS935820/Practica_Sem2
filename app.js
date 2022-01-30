@@ -15,7 +15,7 @@ document.addEventListener("keydown", (e) => {
 //DIV TOGGLE
 //ocultar o mostrar
 const hide = document.querySelector('#hideElements');
-const listDiv = document.querySelector('#list');
+const listDiv = document.querySelector('#listM');
 
 //ADD ITEM
 const addItemInput = document.querySelector('#addItem');
@@ -44,10 +44,10 @@ addItemInput.addEventListener('keypress',(e)=>{
 hide.addEventListener('click', () => {
   if (listDiv.style.display == 'none') {
     listDiv.style.display = 'block';
-    hide.textContent = '<<';
+    hide.textContent = 'Hide';
    } else {
     listDiv.style.display = 'none';
-    hide.textContent = '>>';
+    hide.textContent = 'Show';
    }
 });
 
@@ -77,7 +77,7 @@ removeItem.addEventListener('click', () => {
   let showDiv = document.getElementById('list');
   let divAlert = document.createElement('div');
   let label = document.createElement('label');
-  label.innerHTML= 'Se elimino el elemento '+index;
+  label.innerHTML= 'Se elimino el elemento '+ index;
   divAlert.classList.add('alert', 'alert-danger');//clase de la alerta
   
   items[index].parentNode.removeChild(items[index]);
@@ -87,7 +87,7 @@ removeItem.addEventListener('click', () => {
   //console.log("Se elimino el elemento: "+ index);
   setTimeout(function() {
     divAlert.style.display = 'none';
-  }, 1000);
+  }, 2000);
   
 });
 
